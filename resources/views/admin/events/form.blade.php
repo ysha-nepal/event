@@ -39,7 +39,7 @@
 
 @section('nepali_fields')
     <div class="form-group col-md-12">
-        {{Form::lang($model,'np','title',__($package.'::form.common.title'),true)}}
+        {{Form::lang($model,'np','title',__($package.'::form.common.title'))}}
     </div>
     <div class="form-group col-md-12">
         {{Form::langTextarea($model,'np','description',__($package.'::form.common.Description'))}}
