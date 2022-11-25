@@ -62,7 +62,7 @@ class Event extends BaseModel
      */
     public function getStatusAttribute()
     {
-        if(now()->between($this->start_date_ad,$this->end_date_ad)){
+        if(now()->between($this->start_date_ad,$this->end_date_ad) || $this->end_date_ad->isSameDay()){
             return "Ongoing";
         }
         if($this->start_date_ad->gt(now())){

@@ -1,0 +1,1 @@
+<div id="nepali-calendar-container" class="mt-5" data-url="{{ route('api.nepali.calendar') }}">
